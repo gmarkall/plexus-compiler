@@ -628,7 +628,7 @@ public class JavacCompiler
                 }
 
                 // TODO: there should be a better way to parse these
-                if ( ( buffer.length() == 0 ) && line.startsWith( "error: " ) )
+                if ( line.startsWith( "error: " ) )
                 {
                     errors.add( new CompilerMessage( line, true ) );
                 }
